@@ -58,7 +58,7 @@ This is my suggestion: please read above documents multiple times to understand 
 
 So, if readers want to skip the dizzy part, here is the conclusion: to upload a file in Google Drive, the file should be created first in the drive with proper metadata then uploading the file content data to the file.
 
-Wait a second, does it mean there must be 2-step to upload a file in Google Drive? Of course not! but let me make this loud and clear: this 2-step way is *the* proper way if [Simple Upload](https://developers.google.com/drive/api/v3/manage-uploads#simple) is the option and I will show the readers how to do that in Python. I use [requests](https://docs.python-requests.org/en/master/) module to handle HTTP requests and responses.
+Wait a second, does it mean there must be 2-step to upload a file in Google Drive? Of course not! But let me make this loud and clear: this 2-step way is *the* proper way if [Simple Upload](https://developers.google.com/drive/api/v3/manage-uploads#simple) is the option and I will show the readers how to do that in Python. I use [requests](https://docs.python-requests.org/en/master/) module to handle HTTP requests and responses.
 
 I will explain the whole steps in 3 parts: **Authentication**, **Create a new file** and **Upload file content data**.
 
