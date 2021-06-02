@@ -38,7 +38,7 @@ Alright, I have my client ID and client secret, how to set up the environment to
 
 Then select **Drive API v3** and choose https://www.googleapis.com/auth/drive scope then authorize Google OAuth2 Playground to access the Google account who created the Google Drive project.
 
-Once the above step is done, client the **Exchange authorization code for tokens** button in Step 2 on the screen to generate the **refresh token**. The access token expires in 1 hour, I can refresh it by using refresh token that I just got. Now, I have everything I need to access Google Drive API.
+Once the above step is done, click the **Exchange authorization code for tokens** button in Step 2 on the screen to generate the **refresh token**. The access token expires in 1 hour, I can refresh it by using refresh token that I just got. Now, I have everything I need to access Google Drive API.
 
 ## Talk is cheap, show me the code
 
