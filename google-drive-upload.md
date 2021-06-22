@@ -38,7 +38,7 @@ Alright, I have my client ID and client secret, how to set up the environment to
 
 Then select **Drive API v3** and choose https://www.googleapis.com/auth/drive scope then authorize Google OAuth2 Playground to access the Google account who created the Google Drive project.
 
-Once the above step is done, client the **Exchange authorization code for tokens** button in Step 2 on the screen to generate the **refresh token**. The access token expires in 1 hour, I can refresh it by using refresh token that I just got. Now, I have everything I need to access Google Drive API.
+Once the above step is done, click the **Exchange authorization code for tokens** button in Step 2 on the screen to generate the **refresh token**. The access token expires in 1 hour, I can refresh it by using refresh token that I just got. Now, I have everything I need to access Google Drive API.
 
 ## Talk is cheap, show me the code
 
@@ -58,7 +58,7 @@ This is my suggestion: please read above documents multiple times to understand 
 
 So, if readers want to skip the dizzy part, here is the conclusion: to upload a file in Google Drive, the file should be created first in the drive with proper metadata then uploading the file content data to the file.
 
-Wait a second, does it mean there must be 2-step to upload a file in Google Drive? Of course not! but let me make this loud and clear: this 2-step way is *the* proper way if [Simple Upload](https://developers.google.com/drive/api/v3/manage-uploads#simple) is the option and I will show the readers how to do that in Python. I use [requests](https://docs.python-requests.org/en/master/) module to handle HTTP requests and responses.
+Wait a second, does it mean there must be 2-step to upload a file in Google Drive? Of course not! But let me make this loud and clear: this 2-step way is *the* proper way if [Simple Upload](https://developers.google.com/drive/api/v3/manage-uploads#simple) is the option and I will show the readers how to do that in Python. I use [requests](https://docs.python-requests.org/en/master/) module to handle HTTP requests and responses.
 
 I will explain the whole steps in 3 parts: **Authentication**, **Create a new file** and **Upload file content data**.
 
