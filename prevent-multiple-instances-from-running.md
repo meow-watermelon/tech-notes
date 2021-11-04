@@ -80,9 +80,6 @@ f = open(lock_file, 'w')
 
 try:
     fcntl.flock(f, fcntl.LOCK_EX)
-    print('PID: %d' %(pid))
-    time.sleep(10)
-    f.close()
 except BlockingIOError:
     f.close()
     print('Failed to acquire the exclusive lock, a running process exists already.')
@@ -90,6 +87,10 @@ except BlockingIOError:
 except OSError as e:
     f.close()
     print('Failed to initial flock() call: %s' %(e))
+else:
+    print('PID: %d' %(pid))
+    time.sleep(10)
+    f.close()
 ```
 
 On Terminal 1, running:
@@ -135,9 +136,6 @@ f = open(lock_file, 'w')
 
 try:
     fcntl.flock(f, fcntl.LOCK_EX | fcntl.LOCK_NB)
-    print('PID: %d' %(pid))
-    time.sleep(10)
-    f.close()
 except BlockingIOError:
     f.close()
     print('Failed to acquire the exclusive lock, a running process exists already.')
@@ -145,6 +143,10 @@ except BlockingIOError:
 except OSError as e:
     f.close()
     print('Failed to initial flock() call: %s' %(e))
+else:
+    print('PID: %d' %(pid))
+    time.sleep(10)
+    f.close()
 ```
 
 On Terminal 1, running:
