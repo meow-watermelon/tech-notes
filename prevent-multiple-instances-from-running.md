@@ -87,6 +87,7 @@ except BlockingIOError:
 except OSError as e:
     f.close()
     print('Failed to initial flock() call: %s' %(e))
+    sys.exit(2)
 else:
     print('PID: %d' %(pid))
     time.sleep(10)
@@ -143,6 +144,7 @@ except BlockingIOError:
 except OSError as e:
     f.close()
     print('Failed to initial flock() call: %s' %(e))
+    sys.exit(2)
 else:
     print('PID: %d' %(pid))
     time.sleep(10)
