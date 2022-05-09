@@ -10,7 +10,7 @@ ESTAB     0           0                            192.168.1.102:60200          
 ...
 ```
 
-The value of **rb**(receive buffer) is the size if socket receive buffer.
+The value of **rb**(receive buffer) is the size of socket receive buffer.
 
 
 ## Socket buffer explanation
