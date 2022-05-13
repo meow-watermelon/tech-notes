@@ -76,7 +76,7 @@ The receive buffer value is 131072 bytes, which is the default OS receive buffer
 
 In this case, the actual receive buffer would be the 2 x configured value. However, it cannot be greater than the value of `/proc/sys/net/core/rmem_max`.
 
-##### Example 2.1: Set up receive buffer value 100000 bytes
+##### Example 2.1: Set up receive buffer value less than the max value
 
 ```
 /proc/sys/net/core/rmem_max: 212992
