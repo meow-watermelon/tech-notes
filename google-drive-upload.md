@@ -10,7 +10,7 @@ This note only talks about Google Drive API v3 upload part and **DOES NOT** incl
 
 ## Prerequisites
 
-Okay, before moving on, the reader should have some basic knowledge to understand how OAuth2 authentication protocol works. I won't explain it here because that's another big topic. Google Drive API only permits OAuth2 to grant authentication so do some homework is very necessary, Here's a good explanation [document](https://developers.google.com/identity/protocols/oauth2).
+Okay, before moving on, the reader should have some basic knowledge to understand how OAuth2 authorization protocol works. I won't explain it here because that's another big topic. Google Drive API only permits OAuth2 to grant authorization so do some homework is very necessary, Here's a good explanation [document](https://developers.google.com/identity/protocols/oauth2).
 
 Also, it is important to understand the *SCOPE* concept in Google Drive API. Here's the [document](https://developers.google.com/drive/api/v3/about-auth).
 
