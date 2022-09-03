@@ -52,7 +52,7 @@ No. of corrupted Replica: 1
 Block replica on datanode/rack: dn2.internal/R2 is CORRUPT	 ReasonCode: GENSTAMP_MISMATCH
 ```
 
-To recover the missing block, simply rename theblock metadata filename to the original one then restart datanode. A `fsck` output after the fix.
+To recover the missing block, simply rename the block metadata filename to the original one then restart datanode. A `fsck` output after the fix.
 
 ```
 Connecting to namenode via http://namenode.internal:50070/fsck?ugi=hdfs&blockId=blk_1073764947+&path=%2F
