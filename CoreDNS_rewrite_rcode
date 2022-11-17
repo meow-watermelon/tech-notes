@@ -2,7 +2,7 @@
 
 ## How-to
 
-Using the template plugin can manipulate DNS response RCODE. The following example is to make sure any DNS query would return `SERVFAIL` RCODE.
+Using the [template](https://coredns.io/plugins/template/) plugin can manipulate DNS response RCODE. The following example is to make sure any DNS query would return *SERVFAIL* RCODE.
 
 ```
 .:5300 {
